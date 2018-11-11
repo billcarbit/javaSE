@@ -8,5 +8,6 @@ public class DecoratorTest {
         Merry buyShoes = new BuyShoes(wangning);
         buyClothes.merry();
         buyShoes.merry();
+
     }
 }
