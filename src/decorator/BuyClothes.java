@@ -14,7 +14,8 @@ public class BuyClothes implements Merry {
         mMerry.merry();
     }
 
-    private void buyWesternStyleClothes() {
+    public Merry buyWesternStyleClothes() {
         System.out.println("买一套西服");
+        return this;
     }
 }
