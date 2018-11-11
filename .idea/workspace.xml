@@ -114,8 +114,8 @@
       <file leaf-file-name="DecoratorTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/decorator/DecoratorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="251">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -336,13 +336,11 @@
     </configuration>
     <list>
       <item itemvalue="Application.ProxyTest" />
-      <item itemvalue="Application.ProxyTest (1)" />
       <item itemvalue="Application.DecoratorTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.DecoratorTest" />
-        <item itemvalue="Application.ProxyTest (1)" />
         <item itemvalue="Application.ProxyTest" />
       </list>
     </recent_temporary>
@@ -358,12 +356,12 @@
       <option name="presentableId" value="Default" />
       <updated>1541857121460</updated>
       <workItem from="1541857124211" duration="3424000" />
-      <workItem from="1541931463755" duration="4918000" />
+      <workItem from="1541931463755" duration="5004000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8342000" />
+    <option name="totallyTimeSpent" value="8428000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -640,8 +638,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/decorator/DecoratorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="251">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
