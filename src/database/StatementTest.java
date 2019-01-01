@@ -16,8 +16,8 @@ public class StatementTest {
             Long beginTime = System.currentTimeMillis();
             //创建一个Statement对象
             Statement stmt = conn.createStatement(); //创建Statement对象
-            for (int i = 0; i < 5; i++) {
-                String sql = "insert into t_user(t_username) values (" + i + ")";
+            for (int i = 0; i < 10000; i++) {
+                String sql = "insert into t_user(t_username) values ("  + "'A')";
                 stmt.executeUpdate(sql);
             }
             conn.commit();

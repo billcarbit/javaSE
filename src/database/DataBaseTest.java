@@ -11,9 +11,9 @@ public class DataBaseTest {
     public static void main(String[] args) {
         try {
             Connection conn = DriverManager.getConnection(url, "root", "");
-            //new StatementTest().test(conn);
+            new StatementTest().test(conn);
             //new PreparedStatementTest().test(conn);
-            new PreparedStatementBatchTest().test(conn);
+            //new PreparedStatementBatchTest().test(conn);
 
         } catch (SQLException e) {
             e.printStackTrace();

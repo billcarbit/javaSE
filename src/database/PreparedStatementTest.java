@@ -11,20 +11,16 @@ public class PreparedStatementTest {
 
     public void test(Connection conn) {
         try {
-
-            Long beginTime = System.currentTimeMillis();
-
             conn.setAutoCommit(false);//手动提交
-
+            Long beginTime = System.currentTimeMillis();
             PreparedStatement pst = conn.prepareStatement("insert into t_user(t_username) values (?)");
-
-            for (int i = 0; i < 5; i++) {
-                pst.setInt(1, i);
+            for (int i = 0; i < 10000; i++) {
+                pst.setInt(1, 'A');
                 pst.execute();
             }
             conn.commit();
             Long endTime = System.currentTimeMillis();
-            System.out.println("Pst用时:" + (endTime - beginTime) + "秒");//计算时间
+            System.out.println("Pst用时:" + (endTime - beginTime) );//计算时间
             pst.close();
             conn.close();
         } catch (SQLException e) {
