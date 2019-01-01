@@ -12,4 +12,6 @@ import static java.lang.annotation.ElementType.FIELD;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface ValueFrom {
     String superFiled();
+
+    boolean replaced() default false;
 }

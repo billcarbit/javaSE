@@ -1,32 +1,65 @@
 package beanconvert;
 
+import beanconvert.bean.ControllerBean;
+import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.serializer.SerializeFilter;
+import com.alibaba.fastjson.serializer.SimplePropertyPreFilter;
+
 import java.lang.reflect.Field;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class Converter {
 
-    public Converter(Object obj) throws IllegalAccessException {
-        Map<String, String> map = new HashMap<String, String>();
+    List<String> fieldList = new ArrayList<String>();
+    Map<String, String> fieldValMap = new HashMap<String, String>();
 
+    public Converter() {
+    }
+
+    public String toJsonString(Object obj) throws IllegalAccessException {
         Class cls = obj.getClass();
-        Field[] fields = cls.getDeclaredFields();
+        dealSuperFields(cls, obj);
+        dealSubFields(cls, obj);
+        return convertToFastJsonString(obj);
+    }
+
+    private void dealSuperFields(Class cls, Object obj) throws IllegalAccessException {
         Class superCls = cls.getSuperclass();
         Field[] superFields = superCls.getDeclaredFields();
         for (Field field : superFields) {
             field.setAccessible(true);
             Object value = field.get(obj);
-            map.put(field.getName(), value.toString());
+            fieldValMap.put(field.getName(), value.toString());
+            fieldList.add(field.getName());
         }
+    }
+
+    private void dealSubFields(Class cls, Object obj) throws IllegalAccessException {
+        Field[] fields = cls.getDeclaredFields();
         for (Field field : fields) {
             if (field.isAnnotationPresent(ValueFrom.class)) {
                 ValueFrom fieldAnnotation = (ValueFrom) field.getAnnotation(ValueFrom.class);
-                if (map.containsKey(fieldAnnotation.superFiled())) {
+                if (fieldValMap.containsKey(fieldAnnotation.superFiled())) {
                     field.setAccessible(true);
-                    field.set(obj, map.get(fieldAnnotation.superFiled()));
+                    field.set(obj, fieldValMap.get(fieldAnnotation.superFiled()));
+                    if (fieldAnnotation.replaced()) {
+                        fieldList.remove(fieldAnnotation.superFiled());
+                    }
+                    fieldList.add(field.getName());
                 }
-
             }
         }
+    }
+
+    private String convertToFastJsonString(Object obj) {
+        String[] strings = new String[fieldList.size()];
+        SimplePropertyPreFilter filter1 = new SimplePropertyPreFilter(ControllerBean.class,
+                fieldList.toArray(strings));
+        SerializeFilter[] filters = new SerializeFilter[]{filter1};
+        String json = JSONObject.toJSONString(obj, filters);
+        return json;
     }
 }

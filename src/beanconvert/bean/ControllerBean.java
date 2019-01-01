@@ -3,7 +3,7 @@ package beanconvert.bean;
 import beanconvert.ValueFrom;
 
 public class ControllerBean extends DaoBean {
-    @ValueFrom(superFiled="daoId")
+    @ValueFrom(superFiled="daoId",replaced = true)
     private String controllerId;
     @ValueFrom(superFiled="daoName")
     private String controllerName;
