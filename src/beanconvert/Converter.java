@@ -1,6 +1,7 @@
 package beanconvert;
 
 import beanconvert.bean.ControllerBean;
+import beanconvert.bean.UserInfo;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.serializer.SerializeFilter;
 import com.alibaba.fastjson.serializer.SimplePropertyPreFilter;
@@ -11,12 +12,23 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Converter {
+public class Converter<Father, Son> {
 
     List<String> fieldList = new ArrayList<String>();
     Map<String, String> fieldValMap = new HashMap<String, String>();
 
     public Converter() {
+    }
+
+    public Son getSubObject(Father fatherObj, Class<Son> sonCls) throws IllegalAccessException, InstantiationException {
+        Son sonObj = sonCls.newInstance();
+        Field[] sonFields = sonCls.getDeclaredFields();
+        for (Field field : sonFields) {
+            field.setAccessible(true);
+            field.set(sonObj, "sas");
+            // TODO: 2019/1/2  
+        }
+        return sonObj;
     }
 
     public String toJsonString(Object obj) throws IllegalAccessException {
@@ -32,6 +44,9 @@ public class Converter {
         for (Field field : superFields) {
             field.setAccessible(true);
             Object value = field.get(obj);
+            if (value == null) {
+                continue;
+            }
             fieldValMap.put(field.getName(), value.toString());
             fieldList.add(field.getName());
         }
