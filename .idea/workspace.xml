@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca6a6508-50e9-4f0f-87de-64c08d96686f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/beanconvert/bean/UserInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/beanconvert/bean/UserInfo2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rmi/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rmi/GreetService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rmi/GreetServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rmi/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/beanconvert/ConvertTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/beanconvert/ConvertTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/beanconvert/Converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/beanconvert/Converter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/beanconvert/ConvertTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/beanconvert/ConvertTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/beanconvert/Converter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/beanconvert/Converter.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,46 +19,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="525">
-      <file leaf-file-name="DaoBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/beanconvert/bean/DaoBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="4" selection-start-line="4" selection-end-line="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ControllerBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/beanconvert/bean/ControllerBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UserInfo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/beanconvert/bean/UserInfo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
               <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
               <folding>
-                <element signature="e#210#211#0" expanded="true" />
-                <element signature="e#235#236#0" expanded="true" />
-                <element signature="e#271#272#0" expanded="true" />
-                <element signature="e#299#300#0" expanded="true" />
-                <element signature="e#330#331#0" expanded="true" />
-                <element signature="e#357#358#0" expanded="true" />
-                <element signature="e#397#398#0" expanded="true" />
-                <element signature="e#429#430#0" expanded="true" />
-                <element signature="e#462#463#0" expanded="true" />
-                <element signature="e#491#492#0" expanded="true" />
-                <element signature="e#535#536#0" expanded="true" />
-                <element signature="e#571#572#0" expanded="true" />
-                <element signature="e#605#606#0" expanded="true" />
-                <element signature="e#635#636#0" expanded="true" />
-                <element signature="e#681#682#0" expanded="true" />
-                <element signature="e#719#720#0" expanded="true" />
                 <element signature="e#756#757#0" expanded="true" />
                 <element signature="e#788#789#0" expanded="true" />
                 <element signature="e#838#839#0" expanded="true" />
@@ -74,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/src/beanconvert/bean/UserInfo2.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="e#288#289#0" expanded="true" />
                 <element signature="e#313#314#0" expanded="true" />
@@ -89,28 +53,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataBaseTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/database/DataBaseTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PreparedStatementBatchTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/database/PreparedStatementBatchTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConvertTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ConvertTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/beanconvert/ConvertTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
+            <state relative-caret-position="360">
               <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -122,7 +68,7 @@
       <file leaf-file-name="ValueFrom.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/beanconvert/ValueFrom.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
+            <state relative-caret-position="180">
               <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -134,13 +80,64 @@
       <file leaf-file-name="Converter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/beanconvert/Converter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+            <state relative-caret-position="193">
+              <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#423#431#0" expanded="true" />
-                <element signature="e#484#500#0" expanded="true" />
+                <element signature="e#470#478#0" expanded="true" />
+                <element signature="e#531#547#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GreetService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/rmi/GreetService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GreetServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/rmi/GreetServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Server.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/rmi/Server.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="16" column="43" lean-forward="true" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Client.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/rmi/Client.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="73">
+              <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RpcConsumer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/rpc/RpcConsumer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="4" column="87" selection-start-line="4" selection-start-column="83" selection-end-line="4" selection-end-column="87" />
             </state>
           </provider>
         </entry>
@@ -151,8 +148,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
-        <option value="Interface" />
         <option value="AnnotationType" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -176,10 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/proxy/dynamic/StuInvocationHandler.java" />
-        <option value="$PROJECT_DIR$/src/proxy/dynamic/ProxyFactory.java" />
-        <option value="$PROJECT_DIR$/src/proxy/dynamic/ProxyTest.java" />
-        <option value="$PROJECT_DIR$/src/proxy/staticproxy/GoToCourt.java" />
         <option value="$PROJECT_DIR$/src/proxy/staticproxy/ProxyCompany.java" />
         <option value="$PROJECT_DIR$/src/proxy/staticproxy/ProxyLawyer.java" />
         <option value="$PROJECT_DIR$/src/proxy/staticproxy/ProxyTest.java" />
@@ -227,6 +220,10 @@
         <option value="$PROJECT_DIR$/src/beanconvert/bean/UserInfo.java" />
         <option value="$PROJECT_DIR$/src/beanconvert/ConvertTest.java" />
         <option value="$PROJECT_DIR$/src/beanconvert/Converter.java" />
+        <option value="$PROJECT_DIR$/src/rmi/GreetService.java" />
+        <option value="$PROJECT_DIR$/src/rmi/GreetServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/rmi/Server.java" />
+        <option value="$PROJECT_DIR$/src/rmi/Client.java" />
       </list>
     </option>
   </component>
@@ -296,45 +293,15 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="javaSE" type="b2602c69:ProjectViewProjectNode" />
               <item name="javaSE" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaSE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaSE" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaSE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaSE" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaSE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaSE" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="beanconvert" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaSE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaSE" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="beanconvert" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaSE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaSE" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="javaSE" type="b2602c69:ProjectViewProjectNode" />
@@ -355,7 +322,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -379,7 +346,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ConvertTest">
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="rmi.Client" />
+      <module name="javaSE" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rmi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration name="ConvertTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="beanconvert.ConvertTest" />
       <module name="javaSE" />
@@ -402,6 +380,17 @@
         </pattern>
       </extension>
     </configuration>
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="rmi.Server" />
+      <module name="javaSE" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rmi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration name="StatementTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="database.StatementTest" />
       <module name="javaSE" />
@@ -412,22 +401,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-    </configuration>
-    <configuration name="SubmitTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="annotation.SubmitTest" />
-      <module name="javaSE" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="annotation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test" />
-      <module name="javaSE" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -471,19 +444,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.SubmitTest" />
-      <item itemvalue="Application.Test" />
       <item itemvalue="Application.DataBaseTest" />
       <item itemvalue="Application.StatementTest" />
       <item itemvalue="Application.ConvertTest" />
+      <item itemvalue="Application.Client" />
+      <item itemvalue="Application.Server" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Server" />
         <item itemvalue="Application.ConvertTest" />
         <item itemvalue="Application.DataBaseTest" />
         <item itemvalue="Application.StatementTest" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.SubmitTest" />
       </list>
     </recent_temporary>
   </component>
@@ -509,12 +482,13 @@
       <workItem from="1546190038150" duration="21000" />
       <workItem from="1546190080142" duration="2056000" />
       <workItem from="1546325926186" duration="7511000" />
-      <workItem from="1546434724688" duration="8202000" />
+      <workItem from="1546434724688" duration="8466000" />
+      <workItem from="1546768260091" duration="3018000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47681000" />
+    <option name="totallyTimeSpent" value="50963000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -529,14 +503,13 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.4310532" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32942554" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32942554" />
+      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32942554" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32942554" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3270809" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30130294" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3072747" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32942554" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -548,6 +521,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32942554" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -562,28 +536,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/decorator/BuyWesternStyleClothes.java" />
-    <entry file="file://$PROJECT_DIR$/src/decorator/Merry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/decorator/Wangning.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/decorator/DecoratorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://F:/Program Files/Java/jdk1.8.0_31/src.zip!/java/lang/annotation/ElementType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1530">
@@ -617,13 +569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rpc/RpcConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -849,13 +794,13 @@
     <entry file="file://$PROJECT_DIR$/src/beanconvert/bean/ControllerBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/beanconvert/ValueFrom.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
+        <state relative-caret-position="180">
           <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -863,34 +808,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/beanconvert/bean/Base.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/beanconvert/bean/Base.java" />
     <entry file="file://$PROJECT_DIR$/src/beanconvert/bean/UserInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
           <folding>
-            <element signature="e#210#211#0" expanded="true" />
-            <element signature="e#235#236#0" expanded="true" />
-            <element signature="e#271#272#0" expanded="true" />
-            <element signature="e#299#300#0" expanded="true" />
-            <element signature="e#330#331#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#397#398#0" expanded="true" />
-            <element signature="e#429#430#0" expanded="true" />
-            <element signature="e#462#463#0" expanded="true" />
-            <element signature="e#491#492#0" expanded="true" />
-            <element signature="e#535#536#0" expanded="true" />
-            <element signature="e#571#572#0" expanded="true" />
-            <element signature="e#605#606#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#681#682#0" expanded="true" />
-            <element signature="e#719#720#0" expanded="true" />
             <element signature="e#756#757#0" expanded="true" />
             <element signature="e#788#789#0" expanded="true" />
             <element signature="e#838#839#0" expanded="true" />
@@ -902,7 +825,7 @@
     <entry file="file://$PROJECT_DIR$/src/beanconvert/bean/UserInfo2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="e#288#289#0" expanded="true" />
             <element signature="e#313#314#0" expanded="true" />
@@ -916,22 +839,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/beanconvert/Converter.java">
+    <entry file="file://$PROJECT_DIR$/src/beanconvert/ConvertTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        <state relative-caret-position="360">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#423#431#0" expanded="true" />
-            <element signature="e#484#500#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/beanconvert/ConvertTest.java">
+    <entry file="file://$PROJECT_DIR$/src/beanconvert/Converter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        <state relative-caret-position="193">
+          <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#470#478#0" expanded="true" />
+            <element signature="e#531#547#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rpc/RpcConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="87" selection-start-line="4" selection-start-column="83" selection-end-line="4" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rmi/GreetServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rmi/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="16" column="43" lean-forward="true" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rmi/GreetService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rmi/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
